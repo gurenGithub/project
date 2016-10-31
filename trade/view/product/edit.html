@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable"> 
+    <meta content="yes" name="apple-touch-fullscreen"> 
+    <meta name="flexible" content="initial-dpr=2" />
+    <meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../content/src/css/utils.css?v=1">
+	<link rel="stylesheet" type="text/css" href="../../content/src/css/product/edit.css?v=5">
+	<link rel="stylesheet" type="text/css" href="../../content/src/font/fontello/css/fontello.css">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 
+    <script src="../../content/src/js/vendor/zepto.js"></script>
+     <script src="../../content/src/js/vendor/imageUpload.js"></script>
+     <script type="text/javascript">
+     	
+     	$(function(){
+
+               imageUpload.init({});
+
+     	});
+     </script>
+</head>
+<body>
+<form>
+    <div class="wrapper750">
+    	<header>编辑产品</header>
+    	<div class="container">
+    		<div class="row">
+    			<div class="row-title">物品名称</div>
+    			<div class="row-content">
+    				<input type="text" placeholder="请输入物品名称" required="required"></input>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">副标题</div>
+    			<div class="row-content">
+    				<input type="text" placeholder="请输入副标题"></input>
+    			</div>
+    		</div>
+
+
+    		<div class="row">
+    			<div class="row-title">一级分类</div>
+    			<div class="row-content">
+    				<select  placeholder="请输入一级分类">
+    					<option value="A">A</option>
+    					<option value="B">B</option>
+    					<option value="C">B</option>
+    				</select>
+    			</div>
+    		</div>
+
+
+    		<div class="row">
+    			<div class="row-title">二级分类</div>
+    			<div class="row-content">
+    				<select  placeholder="请输入二级分类">
+    					<option value="A">A</option>
+    					<option value="B">B</option>
+    					<option value="C">B</option>
+    				</select>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">新成度</div>
+    			<div class="row-content">
+    				<input type="text" placeholder="请输入新成度"></input>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">品牌名称</div>
+    			<div class="row-content">
+    				<input type="text" placeholder="请输入品牌名称"></input>
+    			</div>
+    		</div>
+
+
+    		<div class="row">
+    			<div class="row-title">售价</div>
+    			<div class="row-content">
+    				<input type="number" placeholder="请输入售价"></input>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">原价</div>
+    			<div class="row-content">
+    				<input type="number" placeholder="请输入原价"></input>
+    			</div>
+    		</div>
+
+
+             <div class="row">
+    			<div class="row-title">邮费</div>
+    			<div class="row-content">
+    				<input type="number" placeholder="请输入邮费"></input>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">折扣</div>
+    			<div class="row-content">
+    				<input type="number" placeholder="请输入折扣"></input>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">原价</div>
+    			<div class="row-content">
+    				<input type="number" placeholder="请输入原价"></input>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="row-title">适用年龄</div>
+    			<div class="row-content">
+    				<select  placeholder="请输入适用年龄">
+    					<option value="A">6-12</option>
+    					<option value="B">12-25</option>
+    					<option value="C">25-40</option>
+    				</select>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="row-title">尺寸</div>
+    			<div class="row-content">
+    				<input type="text" placeholder="请输入尺寸"></input>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="row-title">照片</div>
+    			<div class="row-content">
+    				<ul class="imgs">
+    					<li class="img-item img-plus IC-plus">
+    						<input type="file" value="Upload"  multiple="multiple"  />
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="row-title">联系方式</div>
+    			<div class="row-content">
+    				<input type="text" placeholder="请输入联系方式"></input>
+    			</div>
+    		</div>
+            <div class="row">
+    			<div class="row-title">所在省市</div>
+    			<div class="row-content cb">
+    				<select  placeholder="请输入省份" class="w48p fl">
+    					<option value="A">6-12</option>
+    					<option value="B">12-25</option>
+    					<option value="C">25-40</option>
+    				</select>
+    				<select  placeholder="请输入城市" class="w48p fr">
+    					<option value="A">6-12</option>
+    					<option value="B">12-25</option>
+    					<option value="C">25-40</option>
+    				</select>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="row-title">内容描述</div>
+    			<div class="row-content">
+    				<textarea placeholder='请输入内容描述'></textarea> 
+    			</div>
+    		</div>
+    	</div>
+    	<footer >
+            <div class="action">
+    		 <input type="submit" value="提交" class="btn btn-submit w50p" />
+    		 <input type="reset" value="取消" class="btn btn-cancel w50p"  />
+    		</div>
+    	</footer>
+    </div>
+    </form>
+</body>
+</html>

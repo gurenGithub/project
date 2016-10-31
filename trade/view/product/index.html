@@ -1,0 +1,52 @@
+ 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FileReader:读取本地图片文件并显示</title>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+<form><input type="file" title="上传图片" id="upimg"></form>
+<script>
+	var fimg=$('#upimg');
+	var img=new Image();
+	var dw=400,dh=300;
+	fimg.on('change',function(ev){
+		var f=ev.target.files[0];
+		if(f.type.match('image.*')){
+			var r = new FileReader();
+			r.onload = function(e){
+				img.setAttribute('src',e.target.result);
+		    };
+			r.readAsDataURL(f);
+		}
+	});
+	img.onload=function(){
+		ih=img.height,iw=img.width;
+		if(iw/ih > dw/dh && iw > dw){
+			ih=ih/iw*dw;
+			iw=dw;
+		}else if(ih > dh){
+			iw=iw/ih*dh;
+			ih=dh;
+		}
+		var cv = document.createElement('div');
+		cv.innerHTML="<canvas></canvas>";
+		var rc = cv.children[0];
+		var ct = rc.getContext('2d');
+		rc.width=iw;
+		rc.height=ih;
+		ct.drawImage(img,0,0,iw,ih);
+		var da=rc.toDataURL();
+		alert(esc(da));
+
+		document.body.appendChild(img);
+	}
+	function esc(da){
+		da=da.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;');
+		return encodeURIComponent(da);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable"> 
+    <meta content="yes" name="apple-touch-fullscreen"> 
+    <meta name="flexible" content="initial-dpr=2" />
+    <meta charset=utf-8>
+
+	<title>二手交易中心</title>
+	<link rel="stylesheet" type="text/css" href="content/src/css/utils.css?v=1">
+	<link rel="stylesheet" type="text/css" href="content/src/css/index.css?v=5">
+	<link rel="stylesheet" type="text/css" href="content/src/font/fontello/css/fontello.css">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 
+    <script src="content/src/js/vendor/zepto.js"></script>
+    <script type="text/javascript">
+            $(function(){
+               $('.footer span').on('click',function()
+               {
+               var activeClass='footrtActive';
+               	var $me=$(this);
+               	var tartget=$me.attr('target');
+               	var $tartget=$('.'+tartget);
+               	$('.body>div').hide();
+                $tartget.show();
+                 $('.footer span').removeClass(activeClass);
+                 $me.addClass(activeClass);
+               });
+            });
+    </script> 
+</head>
+<body>
+<div class="indexwrap">
+  <div class="h70 header">交易中心</div>
+  <div class="body">
+  <div class="userinfo">
+  	<div class="info">
+  	    <div class="info-logo">
+        <img src="content/src/img/user.jpg"  class="info-img" />
+        </div>
+  	</div>
+  	<div class="info-desc">
+        	<p class="info-desc-name">潘伟军</p>
+        	<p >乐观，自信，爱</span></p>
+        	<p><span class="IC-tag">web前端 · 广州海尔国际商贸有限公司</span></p>
+        	<p><span class="IC-user">男 27岁 大专 5年工作经验 广州</span></p>
+        	<p><span class="IC-phone">13535239490</span><span class="IC-mail">guren_d@hotmail.com</span> </p>
+     </div>
+    <div class="skill">
+      <p class="skill-header">技能掌握</p>
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>html,css,css3</div>
+     	   <div class="skill-item-desc">
+     	   	1、熟练使用PS切图与CSS布局。<br />
+            2、使用css3动画库（animate.css）实现大部分动画效果。<br />
+            3、css3动画transform,transiction,animation属性。
+     	   </div>
+     </div>
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>html5兼容</div>
+     	   <div class="skill-item-desc">
+     	   	1、selectivizr.js，让IE浏览器支持19个CSS3伪类，2个伪元素，以及所有的属性选择器。<br/>
+     	   	2、html5shiv.js 让IE6-IE8浏览器支持HTML5标签.
+     	   </div>
+     </div>
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>flexible H5页面的终端适配</div>
+     	   <div class="skill-item-desc">
+     	   	1、移动开发中使用rem单位代替px单位，rem单位会根据html元素的font-size值做相应的计算，从而实现屏幕的适配效果，
+     	   	从而达到开发一套的CSS可以适配绝大部分设备。
+     	   </div>
+     </div>
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>javascript，jquery，zepto</div>
+     	   <div class="skill-item-desc">
+     	   	 1、js继承，静态类，call, apply, 闭包，原型模式。<br/>
+     	   	 2、js，jqeury<a href ='http://smallui.com/js/lib/index.html'>扩展控件库</a>,包括（表单验证，ajax提交，弹出提示框，日期控件，延时加载图片等。） <br/>
+     	   	 3、zepto类似jqeury的min版本提供了基础常用方法，优势体积小适用于移动端开发。<br />
+     	   	 4、ES6 新特性。
+     	   </div>
+     </div>  
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>react</div>
+     	   <div class="skill-item-desc">
+     	   	1、它引入了一个叫做虚拟DOM的概念，安插在JavaScript逻辑和实际的DOM之间。这一概念提高了Web性能。<br />
+            2、编写独立的模块化UI组件，这样当某个或某些组件出现问题是，可以方便地进行隔离。<br />
+            3、单向数据流让事情一目了然，redux是一个用于在JavaScript应用中创建单向数据层的架构。<br/>
+     	   </div>
+     </div>
+      <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>vue</div>
+     	   <div class="skill-item-desc">
+     	   	  1、结合angular.js跟react.js 组合类型MVVM框架。<br />
+     	   	  2、刚开始写的时候会抵触心理，写多了觉得可以接受集百家于一身的框架。
+     	   </div>
+     </div>
+
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>gulp</div>
+     	   <div class="skill-item-desc">
+     	   	1、预编译less,sass。<br/>
+     	   	2、代码合并与(css,js)min化，提高页面加载速度。
+     	   </div>
+     </div>
+
+      <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>node.js,nginx</div>
+     	   <div class="skill-item-desc">
+     	   	1、webpack模块化管理工具。<br/>
+     	   	2、webpack预编译ES6语法为ES5代码。<br/>
+     	   	3、express架设node站点服务器。<br/>
+     	   	4、nginx前级分发接入各种不同的web站点。
+     	   </div>
+     </div>
+
+     <div class="skill-item">
+     	   <div class="skill-item-title"><i class="IC-direction"></i>github</div>
+     	   <div class="skill-item-desc">
+     	   	  1、源代码管理工具，<a href='https://github.com/gurenGithub'>gitbub地址。</a>
+     	   </div>
+     </div>
+     </div>
+  </div>
+
+  <div class="work">
+  	
+  	 	<div class="work-item">
+  		<div class="work-item-title">广州海尔国际商贸有限公司</div>
+  		<div class="work-item-other"><i class="IC-gerenzhongxin"></i>web前端<i class="IC-back-in-time"></i>2016</div>
+  		<div class="work-item-desc">
+  		1、负责采购商，供应商，<a href='www.hotoem.com'>Hotoem</a>营运平台，退税帮，设计易5个平台前端页面。<br/>
+        2、与各平台UI设计，后台人员完成页面交互。<br/>
+        3、收集与扩展前端类库，编写公共CSS样式。<br/>
+         </div>
+  	</div>
+  	<div class="work-item">
+  		<div class="work-item-title">广州天越科技电子公司</div>
+  		<div class="work-item-other"><i class="IC-gerenzhongxin"></i>开发经理 <i class="IC-back-in-time"></i>2014</div>
+  		<div class="work-item-desc">
+  		1、分析项目原型，设计项目数据库与架构，制定开发计划，把控与汇报项目进度。<br/>
+        2、带领与指导项目成员开发，核心业务实现。<br/>
+        3、搭建与App端交互WebApi接口，提供在线WebAPI文档。<br/>
+        4、公司内部系统核心框架（前台UI，工作流引擎）维护与编写功能。</div>
+  	</div>
+  	<div class="work-item">
+  		<div class="work-item-title">广州竟优信息科技有限公司</div>
+  		<div class="work-item-other"><i class="IC-gerenzhongxin"></i>研发工程师 <i class="IC-back-in-time"></i>2012</div>
+  		<div class="work-item-desc">
+  		1、跟顾问（技术）探讨需求原型。<br/>
+        2、制定项目开发需求文档与项目开发计划。<br/>
+        3、分配开发任务与实现功能。
+  	</div>
+
+  	</div>
+  </div>
+  <div class="example">
+  	
+  	<div class="example-item">
+      <div class="example-item-title">
+      	<a href="http://www.hotoem.com/"><img src="content/src/img/HOTOEM-LOGO.png"><div>海尔小家电跨境综合服务平台</div></a>
+      </div>
+      <div class="example-item-desc"></div>
+  	 </div>
+
+  	 <div class="example-item">
+      <div class="example-item-title">
+      	<a href="http://www.hidesigncloud.com/"><img src="content/src/img/design-logo.png"><div>家电产品设计平台</div></a>
+      </div>
+      <div class="example-item-desc"></div>
+  	 </div>
+
+  	 <div class="example-item">
+      <div class="example-item-title">
+      	<a href="http://tax.hotoem.com/"><img src="content/src/img/tax-logo.png"><div>小家电外贸出口退税</div></a>
+      </div>
+      <div class="example-item-desc"></div>
+  	 </div>
+  	 <div class="example-item">
+      <div class="example-item-title">
+      	<a href="http://s.hotoem.com/"><img src="content/src/img/supplier-logo.png"><div>供应商平台</div></a>
+      </div>
+      <div class="example-item-desc"></div>
+  	 </div>
+
+  	 <div class="example-item">
+      <div class="example-item-title">
+      	<a href="http://www.tycad.cn/"><img src="content/src/img/tianyue-logo.png"><div>天越-企业内部系统</div></a>
+      </div>
+      <div class="example-item-desc"></div>
+  	 </div>
+  	  <div class="example-item">
+      <div class="example-item-title">
+      	<a href="http://www.ifca.com.cn/uproduct/yingxiaofeiyong.shtml"><img src="content/src/img/wanda-logo.jpg"><div>营销费用管理平台</div></a>
+      </div>
+      <div class="example-item-desc"></div>
+  	 </div>
+  </div>
+  </div>
+  <div class="footer">
+  	<span class="IC-soucang" target="work">主页</span>
+  	<span class="IC-tools"  target='example'>我的寄存</span>
+    <span class="IC-user footrtActive" target='userinfo'>个人信息</span>
+  </div>
+</body>
+</html>
