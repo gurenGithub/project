@@ -50,6 +50,9 @@ html,body{
         margin: 0 auto;
         color: #fff;
         background: #cd133e;
+        .header-title{
+        	color: #fff;
+        }
 	}
 	.container{
       padding-top: 1.333333rem;
@@ -138,11 +141,23 @@ html,body{
           	.img-item{
                  height:3rem;
                  width:3rem;
+                 position: relative;
                  float: left; 
                  img{
                  	height:3rem;
                     width: 3rem;
                     padding: 0.133333rem;
+                 }
+
+                 .img-item-process{
+                 	width: 3rem;
+                 	height: 0px;
+                 	position: absolute;
+                 	bottom: 0;
+                 	z-index: 100;
+                 	background: red;
+                 	filter: alpha(opacity=30);
+               	    opacity: 0.3;
                  }
           	}
           	.img-plus{
