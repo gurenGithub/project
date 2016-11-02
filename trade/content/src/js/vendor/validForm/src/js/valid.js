@@ -294,12 +294,14 @@ $.fn.errorMessage = function(options) {
         maxWidth = options.maxWidth ? 'max-width:' + Math.round(options.maxWidth) + 'px;' : '',
         pointerEvents = options.interactive ? 'pointer-events: auto;' : '';
 
-    var tooltip = $('<div class="tooltipster-base ' + options.theme + '" style="' + minWidth + ' ' + maxWidth + ' ' + pointerEvents + ' ' + animationSpeed + '"><div class="tooltipster-content"></div><div class="tooltipster-arrow tooltipster-arrow-top-left tooltipster-error-arrow" ><span><span></span></span></div></div>');
+    var tooltip = $('<div class="tooltipster-base ' + options.theme + '" style="' + minWidth + ' ' + maxWidth + ' ' + pointerEvents + ' ' + animationSpeed + '"><div class="tooltipster-content"></div><div class="tooltipster-arrow tooltipster-arrow-top-right tooltipster-error-arrow" ><span><span></span></span></div></div>');
     $('.tooltipster-content', tooltip).html(options.content);
     $(this).parent().append(tooltip);
     var offset = $(this).offset();
+
+    var left=$(this).width()-tooltip.width()+offset.left-2;
     tooltip.css({
-        left: offset.left,
+        left:left ,
         top: offset.top - tooltip.height() - 10
     });
 
@@ -311,7 +313,7 @@ $.fn.errorMessage = function(options) {
 
         setTimeout(function(){
           
-           tooltip.remove();
+           //tooltip.remove();
         },3000);
     })(tooltip);
 }
