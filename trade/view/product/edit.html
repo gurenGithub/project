@@ -10,34 +10,45 @@
 	<link rel="stylesheet" type="text/css" href="../../content/src/css/utils.css?v=1">
 	<link rel="stylesheet" type="text/css" href="../../content/src/css/product/edit.css?v=5">
 	<link rel="stylesheet" type="text/css" href="../../content/src/font/fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="../../content/src/js/vendor/validForm/src/css/index.css">
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 
     <script src="../../content/src/js/vendor/zepto.js"></script>
+    <script src="../../content/src/js/vendor/distpicker/distpicker.data.js"></script>
+    <script src="../../content/src/js/vendor/distpicker/mydistpicker.js"></script>
      <script src="../../content/src/js/vendor/imageUpload.js"></script>
+     <script type="text/javascript" src="../../content/src/js/vendor/validForm/dist/js/xValidFrom.jquery.min.cn.js"></script>
+     <script type="text/javascript" src="../../content/src/js/vendor/validForm/src/js/valid.js"></script>
+     <script type="text/javascript" src="../../content/src/js/vendor/validForm/src/js/form.js"></script>
      <script type="text/javascript">
      	
      	$(function(){
 
+
                imageUpload.init({url:'http://192.168.31.129:5620/Upload/Images'});
+
+
+               $('.distpicker').distpicker();
+               $('form').ajaxForm({});
 
      	});
      </script>
 </head>
 <body>
-<form>
+<form action="http://192.168.31.129:5620/Upload/Images" method="POST">
     <div class="wrapper750">
     	<header><span class="IC-left-open-big header-title">编辑产品</span></header>
     	<div class="container">
     		<div class="row">
     			<div class="row-title">物品名称</div>
     			<div class="row-content">
-    				<input type="text" placeholder="请输入物品名称" required="required"></input>
+    				<input type="text" placeholder="请输入物品名称" data-valid="required"></input>
     			</div>
     		</div>
 
     		<div class="row">
     			<div class="row-title">副标题</div>
     			<div class="row-content">
-    				<input type="text" placeholder="请输入副标题"></input>
+    				<input type="text" placeholder="请输入副标题" data-valid="required"></input>
     			</div>
     		</div>
 
@@ -148,10 +159,10 @@
     				<input type="text" placeholder="请输入联系方式"></input>
     			</div>
     		</div>
-            <div class="row">
+            <div class="row distpicker" >
     			<div class="row-title">所在省市</div>
     			<div class="row-content cb">
-    				<select  placeholder="请输入省份" class="w48p fl">
+    				<select  placeholder="请输入省份" class="w48p fl" data-selected='320000'>
     					<option value="A">6-12</option>
     					<option value="B">12-25</option>
     					<option value="C">25-40</option>

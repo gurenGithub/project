@@ -18,31 +18,29 @@ namespace Trade.Controllers
         }
 
         [HttpPost]
-        public ActionResult Images()
+        public ActionResult Images(string file,string name)
         {
-            var file = HttpContext.Request["file"];
+
+           
             Regex reg = new Regex("data:.*;base64,");
             file = reg.Replace(file,"");
             byte[] arr = Convert.FromBase64String(file);
-            MemoryStream ms = new MemoryStream(arr);
-            
+            using (MemoryStream ms = new MemoryStream(arr))
+            {
+
 
                 var dit = Server.MapPath("");
                 if (!Directory.Exists(dit))
                 {
                     Directory.CreateDirectory(dit);
                 }
-                var path = dit + Path.DirectorySeparatorChar + Guid.NewGuid() + ".png";
+                var path = dit + Path.DirectorySeparatorChar + Guid.NewGuid() +(!string.IsNullOrEmpty(name) ? Path.GetExtension(name) :".png");
                 FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
-                //ms.WriteTo(fs);
-                //fs.Close();
-                //ms.Close();
-
                 BinaryWriter w = new BinaryWriter(fs);
                 w.Write(ms.ToArray());
                 fs.Close();
                 ms.Close();
-            
+            }
               
             
             var result = new { result = true, message = "", status = 200 };
