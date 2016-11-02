@@ -311,7 +311,7 @@ $.fn.errorMessage = function(options) {
 
         setTimeout(function(){
           
-           //tooltip.remove();
+           tooltip.remove();
         },3000);
     })(tooltip);
 }

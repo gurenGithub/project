@@ -309,13 +309,13 @@
 }
 .tooltipster-error-arrow span{
 	 color: orange;
-	 z-index: 5;
+	
 }
 
 .tooltipster-error-arrow span span{
 	background: transparent !important;
 	position: absolute;
-	z-index: 10;
+	
 	border-color: #fff ;
 	display: inline-block;
 	bottom: 1px;
