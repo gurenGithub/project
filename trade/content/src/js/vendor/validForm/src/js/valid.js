@@ -4,11 +4,11 @@
 
 if (typeof window.xUtils.errorMessages === 'undefined') {
     window.xUtils.errorMessages = {
-        noChinese: '* Chinese character is not allowed.',
-        required: '* This field is required.',
-        email: '* Invalid Email address.',
-        minLength: '* Minimum {{1}} characters required.',
-        maxLength: '* Maximum {{1}} characters allowed.',
+        noChinese: 'Chinese character is not allowed.',
+        required: 'This field is required.',
+        email: 'Invalid Email address.',
+        minLength: 'Minimum {{1}} characters required.',
+        maxLength: 'Maximum {{1}} characters allowed.',
         invalid: 'This field is invalid.'
     }
 }

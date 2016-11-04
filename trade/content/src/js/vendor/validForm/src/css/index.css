@@ -291,24 +291,38 @@
 
 .tooltipster-error {
 	border-radius: 5px; 
-	border: 1px solid orange;
+	border: 1px solid #C7C7C7;
 	background: white;
 	color: #ff712a !important;
+	font-size: 12px;
+	
+
 }
 .tooltipster-error .tooltipster-content {
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	line-height: 16px;
 	padding: 8px 10px;
-	color: orange !important;
+	color: #000000 !important;
 }
+.tooltipster-error .tooltipster-content:before{
+	display: inline-block;
+	content: '!';
+	padding:3px 7px;
+	background: #FAAB20;
+	color: #fff;
+	border-radius: 2px;
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 16px;
 
+}
 .tooltipster-error-arrow{
 
 
 }
 .tooltipster-error-arrow span{
-	 color: orange;
+	 color: #C7C7C7;
 	
 }
 
