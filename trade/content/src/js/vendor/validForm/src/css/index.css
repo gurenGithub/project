@@ -295,7 +295,7 @@
 	background: white;
 	color: #ff712a !important;
 	font-size: 12px;
-	
+
 
 }
 .tooltipster-error .tooltipster-content {
@@ -308,7 +308,7 @@
 .tooltipster-error .tooltipster-content:before{
 	display: inline-block;
 	content: '!';
-	padding:3px 7px;
+	padding:3px 8px;
 	background: #FAAB20;
 	color: #fff;
 	border-radius: 2px;
