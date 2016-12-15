@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ToUserName><![CDATA[onPw3wX6TbPPD5hE8Mwmyw7czKI0]]></ToUserName>
+  <FromUserName><![CDATA[gh_fc702bd9aa6b]]></FromUserName>
+  <CreateTime>1479370369</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您正在进行微信内置浏览器约束判断测试。您可以：
+<a href="http://sdk.weixin.senparc.com/FilterTest/">点击这里</a>进行客户端约束测试（地址：http://sdk.weixin.senparc.com/FilterTest/），如果在微信外打开将直接返回文字。
+或：
+<a href="http://sdk.weixin.senparc.com/FilterTest/Redirect">点击这里</a>进行客户端约束测试（地址：http://sdk.weixin.senparc.com/FilterTest/Redirect），如果在微信外打开将重定向一次URL。]]></Content>
+</xml>

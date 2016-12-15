@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ToUserName><![CDATA[gh_fc702bd9aa6b]]></ToUserName>
+<FromUserName><![CDATA[onPw3wX6TbPPD5hE8Mwmyw7czKI0]]></FromUserName>
+<CreateTime>1480062890</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx90efe564473d52ff&redirect_uri=http://smallui.tunnel.qydev.com/Account/Login&response_type=code&scope=snsapi_base&state=123#wechat_redirect]]></Content>
+<MsgId>6356821709093983035</MsgId>
+</xml>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ToUserName><![CDATA[gh_fc702bd9aa6b]]></ToUserName>
+<FromUserName><![CDATA[onPw3wX6TbPPD5hE8Mwmyw7czKI0]]></FromUserName>
+<CreateTime>1479370311</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[测试]]></Content>
+<MsgId>6353847104938980592</MsgId>
+</xml>

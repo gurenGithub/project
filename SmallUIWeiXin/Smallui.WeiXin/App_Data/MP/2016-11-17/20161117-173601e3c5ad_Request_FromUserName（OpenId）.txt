@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <Encrypt><![CDATA[]]></Encrypt>
+  <MsgId>636150008510512900</MsgId>
+  <ToUserName><![CDATA[ToUserName]]></ToUserName>
+  <FromUserName><![CDATA[FromUserName（OpenId）]]></FromUserName>
+  <CreateTime>1479375356</CreateTime>
+  <MsgType>Text</MsgType>
+  <Content><![CDATA[你好]]></Content>
+</xml>

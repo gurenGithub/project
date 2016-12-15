@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ToUserName><![CDATA[gh_fc702bd9aa6b]]></ToUserName>
+<FromUserName><![CDATA[onPw3wX6TbPPD5hE8Mwmyw7czKI0]]></FromUserName>
+<CreateTime>1479375400</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[V1001_TODAY_MUSIC]]></EventKey>
+</xml>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.1/themes/default/easyui.css">
+    <script type="text/javascript" src="jquery-easyui-1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.5.1/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="combo.js"></script>
+    <script type="text/javascript">
+    combo.datasouce = {
+        countrys: [{
+            text: '中国',
+            id: 'A'
+        }, {
+            text: '美国',
+            id: 'AN'
+        }],
+        provinces: [{
+                text: '广东',
+                id: 'A1',
+                parent: 'A'
+            }, {
+                text: '广西',
+                id: 'B1',
+                parent: 'A'
+            },
+
+        ],
+        citys: [{
+            text: '广州',
+            id: 'A11',
+            parent: 'A1'
+        }, {
+            text: '佛山',
+            id: 'A12',
+            parent: 'A1'
+        }, {
+            text: '南宁',
+            id: 'B11',
+            parent: 'B1'
+        }, {
+            text: '北海',
+            id: 'B12',
+            parent: 'B1'
+        }, ]
+    }
+    </script>
+</head>
+
+<body>
+    <input class="vcombo" id='country' name="country" datasource='countrys'></input>
+    <input class="vcombo" id='province' name="province" datasource='provinces' parent='#country'></input>
+    <input class="vcombo" id='city' name="city" datasource='citys' parent='#province'></input>
+</body>
+
+</html>

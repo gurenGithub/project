@@ -1,0 +1,56 @@
+.ke-button{
+    width: 60px;
+}
+.ke-container{
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+}
+.ke-toolbar{
+    border-bottom: none;
+    background-color: #f0f0f0;
+}
+.ke-statusbar{
+    display: none;
+}
+span.ke-toolbar-icon.ke-toolbar-icon-url.ke-icon-fontsize {
+    /*background-image: url('../default/input-method.png') ;*/
+}
+.ke-icon-fontsize{
+    background-position:-0px -3px ;
+}
+.ke-toolbar-icon-url{
+    /*background-image: url('../default/input-method.png') ;*/
+}
+.ke-icon-bold{
+    background-position:-2px -19px ;
+}
+
+.ke-icon-italic{
+    background-position:-2px -36px ;
+}
+
+.ke-icon-image{
+    background-position:-4px -53px ;
+}
+
+
+.ke-icon-uploadImg,
+.ke-icon-fontsize,
+.ke-icon-bold,
+.ke-icon-italic {
+    background-image: url('../default/input-method.png') !important;
+    background-repeat: no-repeat !important;
+}
+.ke-icon-uploadImg {
+    background-position: -5px -55px !important;
+}
+.ke-icon-fontsize {
+    width: 16px !important;
+    background-position: -6px -4px !important;
+}
+.ke-icon-bold {
+    background-position: -4px -20px !important;
+}
+.ke-icon-italic {
+    background-position: -3px -37px !important;
+}

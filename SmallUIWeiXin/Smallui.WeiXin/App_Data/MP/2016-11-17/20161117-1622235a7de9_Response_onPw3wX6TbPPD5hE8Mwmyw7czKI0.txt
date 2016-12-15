@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ToUserName><![CDATA[onPw3wX6TbPPD5hE8Mwmyw7czKI0]]></ToUserName>
+  <FromUserName><![CDATA[gh_fc702bd9aa6b]]></FromUserName>
+  <CreateTime>1479370942</CreateTime>
+  <MsgType><![CDATA[news]]></MsgType>
+  <ArticleCount>1</ArticleCount>
+  <Articles>
+    <item>
+      <Title><![CDATA[欢迎你]]></Title>
+      <Description><![CDATA[欢迎你的测试]]></Description>
+      <PicUrl><![CDATA[http://img.hotoem.com/Upload/Image/201608/4bc8330816bc4afb87336c36ddb4a95a.png]]></PicUrl>
+      <Url><![CDATA[http://www.hotoem.com]]></Url>
+    </item>
+  </Articles>
+</xml>
